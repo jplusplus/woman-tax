@@ -29,27 +29,28 @@
 			{% endtrans %}
 
 			<div class="illustration full" data-src="{{ url_for("static", filename="images/monoprix-rayon.jpg") }}" data-ratio="2.472222222">
-				<div class="legend">Au rayon beauté de chez Monoprix on ne mélange pas le bleu et le rose.</div>
+				<div class="legend">Au rayon beauté de chez Monoprix le noir et le rose ne se mélangent pas.</div>
 			</div>
 
 		</div>
 	</div>
 		
 	<div class="illustration full" data-src="{{ url_for("static", filename="images/coiffure.jpg") }}" data-ratio="1.920890774">
+		<div class="legend">Des prix différents selon le genre des clients - France, 2014. Source : <a href="http://womantax.tumblr.com/post/96806258755/les-femmes-payent-ici-a-minima-62-plus-cher-que" target="_blank">Woman Tax Tumblr</a></div>
 	</div>
 	<div class="article container" id="start">
 		<div class="body">
 			{% trans %}
 			<p>Bien des articles ont été écrits sur la base d’exemples anecdotiques au sujet de la Woman Tax. Mais nous sommes des datajournalistes et nous ne pouvions nous contenter de on-dits et de cas par cas, nous voulions prouver l’existence d’une tendance.Nous comptions réaliser une étude complète, européenne même, pour révéler le nom des distributeurs et des marques les plus discriminants envers les femmes.
 			</p>
-			<p>Nos recherches préparatoires nous ont conduit à <a href="http://www.clickorlando.com/blob/view/-/12714016/data/3172859/-/rvy9i4z/-/Female-vs-male-product-study.pdf" target="_blank">cette étude</a> de l'université de Central Florida. Des chercheurs américains ont montré que les femmes payaient systématiquement plus cher chez le coiffeur, le pressing (pour les chemisiers uniquement) et les cosmétiques. Ce dossier mentionne également qu’une autre étude a montré que les concessionnaires automobiles proposaient des offres plus avantageuses aux hommes qu'aux femmes. Dans plusieurs états américains, le législateur a même interdit - depuis plusieurs années déjà - les discriminations de tarification basées sur le sexe dans les services. On n’y affiche plus les prix pour une coupe «homme » ou « femme » mais en fonction de la longueur des cheveux. Pourquoi la France est-elle à la traine ? Nous étions plein d’enthousiasme, nous allions enfin mesurer la Woman Tax et suggérer des moyens d'y mettre fin.
+			<p>Nos recherches préparatoires nous ont conduit à <a href="http://www.clickorlando.com/blob/view/-/12714016/data/3172859/-/rvy9i4z/-/Female-vs-male-product-study.pdf" target="_blank">cette étude</a> de l'université de Central Florida. Des chercheurs américains ont montré que les femmes payaient systématiquement plus cher chez le coiffeur, le pressing (pour les chemisiers uniquement) et les cosmétiques. Ce dossier mentionne également qu’une autre étude a montré que les concessionnaires automobiles proposaient des offres plus avantageuses aux hommes qu'aux femmes. Dans plusieurs états américains, le législateur a même interdit - depuis plusieurs années déjà - les discriminations de tarification basées sur le sexe dans les services. On n’y affiche plus les prix pour une coupe «homme » ou « femme » mais en fonction de la longueur des cheveux. Pourquoi la France est-elle à la traine ? Nous allions enfin mesurer la Woman Tax et suggérer des moyens d'y mettre fin.
 			</p>
 			{% endtrans %}
 		</div>
 	</div>
 
 	<div class="illustration full" data-src="{{ url_for("static", filename="images/rasoirs.jpg") }}" data-position="top left"  data-ratio="2.54333662">
-		<div class="legend">http://womantax.tumblr.com/image/96825928840</div>
+		<div class="legend">Source : <a href="http://womantax.tumblr.com/image/96825928840" target="_blank">Woman Tax Tumblr</a></div>
 
 	<div class="title">{% trans %}I. Ce qu'on révélé les données{% endtrans %}</div>
 	</div>
@@ -60,14 +61,28 @@
 			<p>Récolter automatiquement des données, c'est notre métier. Aspirer tous les prix de tous les distributeurs en Europe n'était pas vraiment un problème. Pour tester notre approche, nous nous sommes intéressés aux déodorants chez Monoprix et Rossman, et aux parfums et eaux de toilette chez Douglas et Sephora. Ces produits auraient dû être des cas faciles, les chercheurs américains ayant déjà montré que les cosmétiques étaient plus chers pour les femmes.</p>
 
 			<p>Au total, nous avons récolté 5000 prix de parfums et 500 prix de déodorants. Un peu de travail de nettoyage de données, puis calcul du prix au litre de chaque produit : les moyennes des prix montraient que les produits pour femme étaient largement plus chers, quel que soient les distributeurs et le pays. Une de nos hypothèses de départ, selon laquelle les allemands, plus branchés unisexe, seraient plus égalitaires, s'écroulait. Il est quand même important de noter que les gammes de produits pour femme sont souvent plus étendues, et un flacon de 7,5cl de Shalimar (pour femme) à 100 euros - soit 14 000 euros le litre - ça vous plombe une moyenne. Le projet s'annonçait un peu plus long que prévu.</p>
+			{% endtrans %}
 
 			<div class="quote">
  				<div class="body">les déodorants Rexona sont un tiers plus chers pour les femmes, et cela va jusqu'à quatre fois plus chers pour la marque Nivea. Les hommes aussi doivent parfois payer plus cher, les produits de la marque Cadum y sont trois fois plus chers pour eux.</div>
  			</div>
 
+
+			<div class="illustration full" data-src="{{ url_for("static", filename="images/prix-median.jpg") }}" data-ratio="1.776">
+				<div class="legend">Les produits pour femme sont largement plus chers, quel que soient les distributeurs et le pays.</div>
+			</div>
+			<br/>
+			{% trans %}
  			<p>Qu'à cela ne tienne ! Nous avons ensuite choisi de comparer les produits deux à deux, c’est à dire les produits identiques packagés et marketés en version “homme” et en version “femme”. Le travail était plus difficile à automatiser, mais nous avons donc retrouvé les couples de produits : suffisamment similaires pour que l'on puisse considérer que le coût des ingrédients n'influence pas le prix de vente (pour un parfum par exemple, les ingrédients représentent moins de 5 % du prix) et suffisamment genrés pour qu'aucun doute ne soit possible. Pour les déodorants vendus chez Monoprix, les différences apparaissent clairement mais varient selon les marques : les déodorants Rexona sont un tiers plus chers pour les femmes, et cela va jusqu'à quatre fois plus chers pour la marque Nivea. Les hommes aussi doivent parfois payer plus cher, les produits de la marque Cadum y sont trois fois plus chers pour eux.
 			Dans les parfums, les différences étaient également très marquées, les femmes payant environ 20 % de plus que les hommes.</p>
+						{% endtrans %}
 
+
+			<div class="illustration full" data-src="{{ url_for("static", filename="images/prix-median-marque.jpg") }}" data-ratio="1.746">
+				<div class="legend">Pour une même marque, les produits pour femme ont tendance à être plus chers, mais ce n'est pas toujours le cas.</div>
+			</div>
+			{% trans %}
+			<br/>
 			<p>Cela dit, cette méthodologie ne nous satisfaisait pas non plus pleinement. Que dire des produits Axe (pour homme), très chers, et qui n'ont pas d'équivalents féminins ? Et les produits unisexes ? Et si les différences de prix étaient liées à la séparation des rayons ? Fallait-il mesurer la distance entre les rayons dans tous les supermarchés d'Europe ? La durée du projet augmentait encore.
 			</p>
 			{% endtrans %}
@@ -83,10 +98,21 @@
 		<div class="body">
 			{% trans %}
 			
-			<p>Un effet très connu en marketing est l'ancrage. Si vous proposez à une cliente trois produits à 5, 10 et 15 euros, vous allez vendre plus de produits à 10 euros, le milieu de gamme. Proposez les mêmes produits à 5, 15 et 50 euros et vous allez vendre presque autant de produits à 15 euros que s'ils étaient à 10 euros. Dès lors, les produits haut-de-gamme pour femmes, même s'ils n'ont pas d'équivalent pour hommes, doivent être pris en compte car ils contribuent à faire que les femmes dépensent plus. Le calcul de la Woman Tax s'annonçait de plus en plus complexe.</p>
+			<p>Un effet bien connu en marketing est l'ancrage. Si vous proposez à un(e) client(e) trois produits à 5, 10 et 15 euros, vous allez vendre plus de produits à 10 euros, le milieu de gamme. Proposez les mêmes produits à 5, 15 et 50 euros et vous allez vendre presque autant de produits à 15 euros que s'ils étaient à 10 euros. Dès lors, les produits haut-de-gamme pour femmes, même s'ils n'ont pas d'équivalent pour hommes, doivent être pris en compte car ils contribuent à faire que les femmes dépensent plus. Le calcul de la Woman Tax s'annonçait de plus en plus complexe.</p>
 
 			<p>Les données que nous avons récoltées montrent aussi que les fabricants proposent plus de produits d'entrée de gamme pour femme que pour homme. Peut-être que les produits pour femme les plus chers sont destinés aux femmes plus aisées, tout simplement et qu’ils sont au final très peu vendus. Il aurait fallu que nous allions chercher les volumes vendus pour chaque produit pour en avoir le cœur net, une tâche beaucoup plus ardue que de collecter les prix.</p>
 			{% endtrans %}
+
+			<div class="illustration full" data-src="{{ url_for("static", filename="images/distrib-hommes.jpg") }}" data-ratio="1.776">
+				<div class="legend">Le prix d'ancrage d'un déodorant pour homme se situe entre 20 et 40 euros le litre.</div>
+			</div>
+			<br/>
+
+			<div class="illustration full" data-src="{{ url_for("static", filename="images/distrib-femmes.jpg") }}" data-ratio="1.776">
+				<div class="legend">Pour les déodorants pour femme, le prix d'ancrage est bien plus relatif.</div>
+			</div>
+
+
 		</div>
 	</div>
 
