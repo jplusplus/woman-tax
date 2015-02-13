@@ -1,21 +1,21 @@
 {
-  "name": "resonate2014",
+  "name": "WomanTax",
   "version": "0.0.0",
-  "description": "Digital Arts Circus",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jplusplus/resonate2014.git"
+    "url": "git://github.com/jplusplus/woman-tax.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jplusplus/resonate2014/issues"
+    "url": "https://github.com/jplusplus/woman-tax/issues"
   },
-  "homepage": "https://github.com/jplusplus/resonate2014",
+  "homepage": "https://github.com/jplusplus/woman-tax",
   "dependencies": {
     "coffee-script": "^1.7.1"
   }

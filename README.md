@@ -1,23 +1,13 @@
-Digital Arts Circus
+Woman tax
 ===================
 
-Resonate Festival, Belgrade, April 2014
 
 
-![Resonate2014](static/images/main.JPG)
-
-## 
-They do not call themselves ‘artists’, but might be the future of art. We met the new-media art scene in Belgrade last week, at the Resonate festival.
-
-Our reportage in english, french and german.
-
-[http://resonate2014.jplusplus.org](http://resonate2014.jplusplus.org) EN  
-[http://resonate2014.jplusplus.org/fr.html](http://resonate2014.jplusplus.org/fr.html) FR  
-[http://resonate2014.jplusplus.org/de.html](http://resonate2014.jplusplus.org/de.html) DE  
+![woman-tax](static/images/main.JPG)
 
 
-By [Anne-Lise Bouyer](https://twitter.com/annelisebouyer), [Sebastian Kraus](https://twitter.com/sm_kraus) et [Edouard Richard](https://twitter.com/vied12) for [Journalism++](http://jplusplus.org/)  
-CC-BY-SA Journalism++ SAS ⁞ Photos © Resonate.
+By [Anne-Lise Bouyer](https://twitter.com/annelisebouyer) et [Nicolas Kayser-Bril](https://twitter.com/nicolaskb) for [Journalism++](http://jplusplus.org/)  
+CC-BY-SA Journalism++ SAS ⁞
 
 Licence : GNU General Public License V3
 
