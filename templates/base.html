@@ -7,11 +7,11 @@
 		<link rel="shortcut icon" type="image/png" href="{{ url_for("static", filename="logos/jpp.png", _external=True) }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:description" content="{% trans %}{% endtrans %}">
-		<meta property="og:title" content="{% trans %}{% endtrans %}"/>
+		<meta name="twitter:description" content="">
+		<meta property="og:title" content=""/>
 		<meta property="og:site_name" content="Journalism++ Magazine"/>
 		<meta property="og:type" content="article"/>
-		<title>{% trans %}Woman tax{% endtrans %}</title>
+		<title>{% block title %}{% endblock %}</title>
 
 		{% include "css.html" %}
 
@@ -19,7 +19,31 @@
 
 	<body class="use-base">
 
-		{% include "header.html" %}
+		<div class="header navbar navbar-default navbar-fixed-top reverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#start"><img src="{{ url_for("static", filename="logos/jpp.png") }}"/><span class="article_title hidden">{% block titlenav %}{% endblock %}</span></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<div class="bookmark">
+						
+						{% block menu %}{% endblock %}
+
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="{{ "active" if g.get('language', 'fr') == "fr" }}"><a href="{{ url_for("index") }}">Français</a></li>
+						<li class="{{ "active" if g.get('language', 'en') == "en" }}"><a href="{{ url_for("page_en") }}">English</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
 
 		{% block content %}{% endblock %}
 

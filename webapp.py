@@ -47,36 +47,17 @@ assets.register(bundles)
 # -----------------------------------------------------------------------------
 @app.route('/')
 def index():
-	g.language = "en"
-
-	response = make_response(render_template('home.html'))
-	return response
-
-
-@app.route('/fr.html')
-def page_fr():
 	g.language = "fr"
+
 	response = make_response(render_template('home.html'))
 	return response
 
-@app.route('/de.html')
-def page_de():
-	g.language = "de"
-	response = make_response(render_template('home.html'))
-	return response
 
-# -----------------------------------------------------------------------------
-#
-#    UTILS
-#
-# -----------------------------------------------------------------------------
-@babel.localeselector
-def get_locale():
-	# try to guess the language from the user accept
-	# header the browser transmits.
-	if not g.get("language"):
-		g.language = request.accept_languages.best_match(['en', 'fr', 'de'])
-	return g.get("language")
+@app.route('/en.html')
+def page_en():
+	g.language = "en"
+	response = make_response(render_template('en.html'))
+	return response
 
 # -----------------------------------------------------------------------------
 #
