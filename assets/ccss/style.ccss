@@ -190,7 +190,7 @@ body, html:
 	font-size   : .78em
 	font-weight : bold
 	line-height : 1.5em
-	padding-bottom: 10px
+	padding-bottom: 10px !important
 	margin-left: 10px
 
 
